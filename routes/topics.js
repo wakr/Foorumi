@@ -11,7 +11,6 @@ router.get('/', function (req, res, next) {
     // Hae kaikki aihealueet tässä (Vinkki: findAll)
 
     Models.Topic.findAll().then(function (topics) {
-        console.log("asd");
         res.json(topics); // send json as result
     });
 
